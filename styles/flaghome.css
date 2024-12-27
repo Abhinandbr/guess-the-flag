@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* navigation sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding: 8px 20px;
+  width: 90%;
+  border-radius: 7px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #535353;
+  margin: 15px 0;
+  position: relative;
+  left: 10px;
+}
+
+.navbar i {
+  font-size: 35px;
+}
+
+#close-sidebar {
+  width: 23%;
+}
+
+.sidebar a:hover {
+  background: #eaeaea;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* navigation bar styling */
+.navbar {
+  height: 75px;
+  width: 90%;
+  border-bottom: 2px solid #d6d6d6;
+  display: flex;
+  align-items: center;
+  transform: translateX(67px);
+}
+
+.logo {
+  margin: 0 60px;
+  font-size: 38px;
+  font-weight: 700;
+  color: #535353;
+}
+
+.navbar-options {
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 80px;
+  gap: 15px;
+}
+
+.navbar-options a {
+  text-decoration: none;
+  padding: 8px 35px;
+  border-radius: 7px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #535353;
+}
+
+.navbar-options a:hover {
+  background: #eaeaea;
+}
+
+/* hero title */
+.hero-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  font-size: 45px;
+}
+
+.hero-title h2 {
+  font-weight: 700;
+}
+
+/* options for levels */
+.flag-option-container {
+  height: 350px;
+  width: 100%;
+  position: relative;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.flag-option1,
+.flag-option2,
+.flag-option3 {
+  height: 300px;
+  width: 230px;
+  background: #eceff2;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.flag-option1:hover,
+.flag-option2:hover,
+.flag-option3:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.option1-img,
+.option2-img,
+.option3-img {
+  height: 125px;
+  width: 200px;
+  border-radius: 15px;
+  transform: translateY(20px);
+  overflow: hidden;
+}
+
+.option1-img img,
+.option2-img img,
+.option3-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flag-option1 p,
+.flag-option2 p,
+.flag-option3 p {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* footer section */
+.footer {
+  width: 100%;
+  background: #000;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  margin-top: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .bottom-line {
+  height: 10px;
+  width: 85%;
+  border-bottom: 1px solid #333;
+}
+
+.footer p,
+i,
+span {
+  color: #d0d0d0;
+}
+
+.footer h2 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    height: 75px;
+    width: 140%;
+    border-bottom: 2px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+    transform: translateX(20px);
+  }
+  .navbar i {
+    font-size: 35px;
+    position: relative;
+    left: 220px;
+  }
+  .logo {
+    position: relative;
+    right: 25px;
+  }
+  .hero-title {
+    width: 150%;
+    text-align: center;
+  }
+
+  .hero-title h2 {
+    font-weight: 700;
+  }
+  .flag-option-container {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    transform: translateX(80px);
+  }
+  .flag-option1,
+  .flag-option2,
+  .flag-option3 {
+    height: 260px;
+    width: 200px;
+  }
+  .option1-img,
+  .option2-img,
+  .option3-img {
+    height: 125px;
+    width: 170px;
+  }
+  .footer {
+    width: 150%;
+    padding: 10px 0;
+    margin-top: 330px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Flag Game</title>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="../styles/flageasy.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <div class="navbar">
+        <div class="logo">Flag Quiz</div>
+        <div class="navbar-options">
+          <a href="../index.html">Home</a>
+          <a href="flagmedium.html">Medium</a>
+          <a href="flaghard.html">Hard</a>
+        </div>
+      </div>
+    </header>
+        <!-- easy level game page -->
+        <div class="flageasy-game-page">
+            <div class="flageasy-title">
+              <h2>
+                Flag Quiz: <span style="font-weight: 700; color: green">Easy</span>
+              </h2>
+            </div>
+            <!-- question conntainer -->
+            <div class="flageasy-container">
+              <!-- countdown time -->
+              <div class="flageasy-timer">
+                Time left:
+                <span id="current-time-left" style="font-weight: 600"></span>
+              </div>
+    
+              <!-- current flag image -->
+              <div class="flageasy-img-container">
+                <img src="" id="flag-image" />
+              </div>
+              <div class="flageasy-question"><h2>What flag is this?</h2></div>
+    
+              <!-- country options -->
+              <div class="flageasy-options"></div>
+            </div>
+    <script src="../scripts/flageasygame.js"></script>
+  </body>
+</html>
