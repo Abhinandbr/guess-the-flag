@@ -326,7 +326,9 @@
   .flageasy-container {
     height: 450px;
     width: 350px;
-    margin-top: 20px;
+    margin-top: 70px;
+    position: relative;
+    bottom: 30px;
   }
   .flageasy-container .flageasy-timer {
     font-size: 19px;
@@ -438,6 +440,8 @@
   .flageasy-container {
     height: 425px;
     width: 325px;
-    margin-top: 20px;
+    margin-top: 70px;
+    position: relative;
+    bottom: 30px;
   }
 }
