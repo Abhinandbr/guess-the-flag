@@ -18,7 +18,7 @@ body {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 220px;
+  width: 200px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
@@ -31,12 +31,12 @@ body {
 
 .sidebar a {
   text-decoration: none;
-  padding: 8px 20px;
+  padding: 8px 18px;
   width: 90%;
   border-radius: 7px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
-  color: #535353;
+  color: #333333;
   margin: 15px 0;
   position: relative;
   left: 10px;
@@ -200,6 +200,7 @@ span {
   color: #fff;
 }
 
+/* responsivenes */
 @media screen and (max-width: 768px) {
   .hideOnMobile {
     display: none;
@@ -208,19 +209,16 @@ span {
     display: block;
   }
   body {
-    max-width: 30vh;
+    max-width: 28vh;
   }
   .navbar {
-    height: 50px;
-    width: 25rem;
-    border-bottom: 2px solid #d6d6d6;
-    display: flex;
-    align-items: center;
-    transform: translateX(10px);
+    height: 55px;
+    width: 26rem;
+    transform: translateX(12px);
   }
   .logo {
     margin: 0 8px;
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 700;
     color: #535353;
   }
@@ -232,6 +230,62 @@ span {
   .navbar-options a:hover {
     background: #fff;
     z-index: -1000;
+  }
+  .hero-title {
+    position: relative;
+    top: 60px;
+    font-size: 38px;
+    width: 26rem;
+    text-align: center;
+  }
+
+  .hero-title h2 {
+    font-weight: 800;
+  }
+  .flag-option-container {
+    height: 350px;
+    width: 425px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 9px;
+  }
+  .flag-option1,
+  .flag-option2,
+  .flag-option3 {
+    height: 200px;
+    flex: 0 1 calc(42% - 1px);
+    margin: 0 5px;
+  }
+  .flag-option2 {
+    margin-right: 11px;
+  }
+  .flag-option1,
+  .flag-option3 {
+    margin-left: 37px;
+  }
+  .flag-option3 {
+    margin-top: 10px;
+  }
+  .option1-img,
+  .option2-img,
+  .option3-img {
+    height: 100px;
+    width: 150px;
+    transform: translateY(12px);
+  }
+  .flag-option1 p,
+  .flag-option2 p,
+  .flag-option3 p {
+    font-size: 23px;
+    font-weight: 800;
+  }
+  .footer {
+    width: 250%;
+    margin-top: 300px;
+  }
+  .footer h2 {
+    font-size: 23px;
   }
 }
 
