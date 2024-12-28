@@ -386,7 +386,8 @@
     margin-top: 20px;
   }
   .result-divider {
-    width: 69%;
+    width: 75%;
+    margin-top: 10px;
   }
   .answer-container {
     width: 50%;
