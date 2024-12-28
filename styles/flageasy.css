@@ -288,6 +288,7 @@
   object-fit: contain;
 }
 
+/* responsivenes */
 @media screen and (max-width: 768px) {
   .logo {
     display: none;
@@ -303,7 +304,7 @@
     gap: 10px;
   }
   .flageasy-title h2 {
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 700;
     margin-bottom: 30px;
   }
@@ -317,12 +318,39 @@
     height: 50px;
     width: 135px;
     font-size: 22px;
-    font-weight: 700;
-    border: none;
-    border-radius: 7px;
-    background: #83caf0;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  }
+  .flageasy-container {
+    height: 450px;
+    width: 350px;
+    margin-top: 40px;
+  }
+  .flageasy-container .flageasy-timer {
+    font-size: 19px;
+  }
+  .flageasy-question h2 {
+    font-size: 23px;
+  }
+  .flageasy-options {
+    width: 95%;
+  }
+  .flageasy-option1 {
+    height: 40px;
+    width: 90%;
+    margin: 20px 0 10px 0;
+  }
+  .flageasy-option2,
+  .flageasy-option3 {
+    height: 40px;
+    width: 90%;
+  }
+  .flageasy-option3 {
+    margin-bottom: 20px;
+  }
+  .flageasy-option1 span,
+  .flageasy-option2 span,
+  .flageasy-option3 span {
+    font-size: 17px;
+    font-weight: 600;
   }
 }
 
