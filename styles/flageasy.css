@@ -387,7 +387,8 @@
     width: 69%;
   }
   .answer-container {
-    width: 53%;
+    width: 50%;
+    height: 340px;
   }
   .answer-container h2 {
     font-size: 21px;
@@ -401,6 +402,17 @@
     font-size: 23px;
     font-weight: 700;
     color: #009400;
+  }
+  .answerflag-container {
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .answerflag-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
 
