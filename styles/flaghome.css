@@ -18,7 +18,7 @@ body {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 300px;
+  width: 220px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
@@ -206,6 +206,32 @@ span {
   }
   .menu-btn {
     display: block;
+  }
+  body {
+    max-width: 30vh;
+  }
+  .navbar {
+    height: 50px;
+    width: 25rem;
+    border-bottom: 2px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+    transform: translateX(10px);
+  }
+  .logo {
+    margin: 0 8px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #535353;
+  }
+  .navbar-options i {
+    font-size: 25px;
+    position: relative;
+    left: 230px;
+  }
+  .navbar-options a:hover {
+    background: #fff;
+    z-index: -1000;
   }
 }
 
