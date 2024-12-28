@@ -8,16 +8,12 @@
   font-style: normal;
 }
 
-body {
-  min-height: 100vh;
-}
-
 /* navigation sidebar styling */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   width: 350px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.3);
