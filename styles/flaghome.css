@@ -233,8 +233,8 @@ span {
   }
 
   .hero-title h2 {
-    font-weight: 700;
-    font-size: 3.6rem;
+    font-weight: 800;
+    font-size: 3.5rem;
     padding: 0 9px;
   }
   .flag-option-container {
@@ -269,7 +269,7 @@ span {
   .flag-option2 p,
   .flag-option3 p {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
   }
   .footer {
     width: 100%;

@@ -325,3 +325,12 @@
     transition: transform 0.2s ease;
   }
 }
+
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .logo {
+    display: block;
+    font-size: 1.8rem;
+    position: relative;
+    right: 2rem;
+  }
+}
