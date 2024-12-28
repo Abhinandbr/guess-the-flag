@@ -287,3 +287,41 @@
   width: 100%;
   object-fit: contain;
 }
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .navbar {
+    width: 90%;
+    height: 55px;
+    transform: translateX(23px);
+    border-bottom: 3px solid #d6d6d6;
+  }
+  .navbar-options {
+    right: 35px;
+    gap: 10px;
+  }
+  .flageasy-title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .flageasy-description p {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  #flageasy-start-btn {
+    height: 50px;
+    width: 135px;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    background: #83caf0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+}
