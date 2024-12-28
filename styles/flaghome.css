@@ -208,9 +208,6 @@ span {
   .menu-btn {
     display: block;
   }
-  body {
-    max-width: 28vh;
-  }
   .navbar {
     width: 45rem;
     transform: translateX(21px);
@@ -284,7 +281,7 @@ span {
     font-weight: 800;
   }
   .footer {
-    width: 370%;
+    width: 47rem;
     margin-top: 750px;
   }
   .footer h2 {
