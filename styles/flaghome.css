@@ -207,58 +207,6 @@ span {
   .menu-btn {
     display: block;
   }
-  .navbar {
-    height: 75px;
-    width: 140%;
-    border-bottom: 2px solid #d6d6d6;
-    display: flex;
-    align-items: center;
-    transform: translateX(20px);
-  }
-  .navbar i {
-    font-size: 35px;
-    position: relative;
-    left: 220px;
-  }
-  .logo {
-    position: relative;
-    right: 25px;
-  }
-  .hero-title {
-    width: 150%;
-    text-align: center;
-  }
-
-  .hero-title h2 {
-    font-weight: 700;
-  }
-  .flag-option-container {
-    height: 500px;
-    width: 100%;
-    position: relative;
-    top: 160px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    transform: translateX(80px);
-  }
-  .flag-option1,
-  .flag-option2,
-  .flag-option3 {
-    height: 260px;
-    width: 200px;
-  }
-  .option1-img,
-  .option2-img,
-  .option3-img {
-    height: 125px;
-    width: 170px;
-  }
-  .footer {
-    width: 150%;
-    padding: 10px 0;
-    margin-top: 330px;
-  }
 }
 
 @media screen and (max-width: 400px) {
