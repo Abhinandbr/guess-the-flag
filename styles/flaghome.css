@@ -18,7 +18,7 @@ body {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 200px;
+  width: 350px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
@@ -34,8 +34,8 @@ body {
   padding: 8px 18px;
   width: 90%;
   border-radius: 7px;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   color: #333333;
   margin: 15px 0;
   position: relative;
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar i {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 #close-sidebar {
@@ -212,18 +212,17 @@ span {
     max-width: 28vh;
   }
   .navbar {
-    height: 55px;
-    width: 26rem;
-    transform: translateX(12px);
+    width: 45rem;
+    transform: translateX(21px);
   }
   .logo {
     margin: 0 8px;
-    font-size: 28px;
+    font-size: 45px;
     font-weight: 700;
-    color: #535353;
+    color: #424242;
   }
   .navbar-options i {
-    font-size: 25px;
+    font-size: 33px;
     position: relative;
     left: 230px;
   }
@@ -233,18 +232,22 @@ span {
   }
   .hero-title {
     position: relative;
-    top: 60px;
-    font-size: 38px;
-    width: 26rem;
+    top: 80px;
+    left: 55px;
+    width: 40rem;
     text-align: center;
   }
 
   .hero-title h2 {
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 5.5rem;
   }
   .flag-option-container {
-    height: 350px;
-    width: 425px;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    height: 430px;
+    width: 640px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -253,8 +256,8 @@ span {
   .flag-option1,
   .flag-option2,
   .flag-option3 {
-    height: 200px;
-    flex: 0 1 calc(42% - 1px);
+    height: 340px;
+    flex: 0 1 calc(43% - 1px);
     margin: 0 5px;
   }
   .flag-option2 {
@@ -262,27 +265,27 @@ span {
   }
   .flag-option1,
   .flag-option3 {
-    margin-left: 37px;
+    margin-left: 42px;
   }
   .flag-option3 {
-    margin-top: 10px;
+    margin-top: 23px;
   }
   .option1-img,
   .option2-img,
   .option3-img {
-    height: 100px;
-    width: 150px;
-    transform: translateY(12px);
+    height: 170px;
+    width: 240px;
+    transform: translateY(15px);
   }
   .flag-option1 p,
   .flag-option2 p,
   .flag-option3 p {
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 800;
   }
   .footer {
-    width: 250%;
-    margin-top: 300px;
+    width: 370%;
+    margin-top: 750px;
   }
   .footer h2 {
     font-size: 23px;
