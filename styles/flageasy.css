@@ -305,6 +305,14 @@
   }
 
   /* starter page */
+  .flageasy-starter-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
   .flageasy-title h2 {
     font-size: 38px;
     font-weight: 700;
@@ -326,9 +334,9 @@
   .flageasy-container {
     height: 450px;
     width: 350px;
-    margin-top: 70px;
+    margin-top: 90px;
     position: relative;
-    bottom: 30px;
+    bottom: 50px;
   }
   .flageasy-container .flageasy-timer {
     font-size: 19px;
