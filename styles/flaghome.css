@@ -14,7 +14,7 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: 350px;
+  width: 320px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
@@ -205,17 +205,19 @@ span {
     display: block;
   }
   .navbar {
-    width: 45rem;
-    transform: translateX(21px);
+    width: 90%;
+    height: 80px;
+    transform: translateX(25px);
+    border-bottom: 3px solid #d6d6d6;
   }
   .logo {
-    margin: 0 8px;
-    font-size: 45px;
+    margin: 0 6px;
+    font-size: 2.9rem;
     font-weight: 700;
     color: #424242;
   }
   .navbar-options i {
-    font-size: 33px;
+    font-size: 2.6rem;
     position: relative;
     left: 230px;
   }
@@ -226,25 +228,25 @@ span {
   .hero-title {
     position: relative;
     top: 80px;
-    left: 55px;
-    width: 40rem;
+    width: 100%;
     text-align: center;
   }
 
   .hero-title h2 {
     font-weight: 900;
-    font-size: 5.5rem;
+    font-size: 4rem;
+    padding: 0 8px;
   }
   .flag-option-container {
     position: relative;
     top: 200px;
-    left: 50px;
+    left: 0px;
     height: 430px;
-    width: 640px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 9px;
+    gap: 5px;
   }
   .flag-option1,
   .flag-option2,
@@ -252,32 +254,33 @@ span {
     height: 340px;
     flex: 0 1 calc(43% - 1px);
     margin: 0 5px;
+    padding: 10px;
   }
   .flag-option2 {
-    margin-right: 11px;
+    margin-right: 2rem;
   }
   .flag-option1,
   .flag-option3 {
-    margin-left: 42px;
+    margin-left: 30px;
   }
   .flag-option3 {
-    margin-top: 23px;
+    margin-top: 25px;
   }
   .option1-img,
   .option2-img,
   .option3-img {
-    height: 170px;
-    width: 240px;
+    height: 10rem;
+    width: 14.5rem;
     transform: translateY(15px);
   }
   .flag-option1 p,
   .flag-option2 p,
   .flag-option3 p {
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 800;
   }
   .footer {
-    width: 47rem;
+    width: 100%;
     margin-top: 750px;
   }
   .footer h2 {
@@ -289,5 +292,50 @@ span {
   .sidebar {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 536px) {
+  .flag-option-container {
+    position: relative;
+    top: 200px;
+    left: 0px;
+    height: 430px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .flag-option1,
+  .flag-option2,
+  .flag-option3 {
+    height: 17rem;
+    flex: 0 1 calc(42% - 1px);
+    margin: 0 5px;
+    padding: 10px;
+  }
+  .option1-img,
+  .option2-img,
+  .option3-img {
+    height: 7rem;
+    width: 11.5rem;
+    transform: translateY(15px);
+  }
+  .flag-option1,
+  .flag-option3 {
+    margin-left: 1.7rem;
+  }
+  .flag-option2 {
+    margin-right: 2rem;
+  }
+  .flag-option1 p,
+  .flag-option2 p,
+  .flag-option3 p {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .flag-option3 {
+    margin-top: 16px;
   }
 }
