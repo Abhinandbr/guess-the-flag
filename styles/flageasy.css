@@ -303,6 +303,8 @@
     right: 35px;
     gap: 10px;
   }
+
+  /* starter page */
   .flageasy-title h2 {
     font-size: 38px;
     font-weight: 700;
@@ -319,16 +321,25 @@
     width: 135px;
     font-size: 22px;
   }
+
+  /* gamepage */
   .flageasy-container {
     height: 450px;
     width: 350px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .flageasy-container .flageasy-timer {
     font-size: 19px;
   }
   .flageasy-question h2 {
     font-size: 23px;
+  }
+  .flageasy-img-container {
+    width: 350px;
+    height: 230px;
+  }
+  .flageasy-img-container img {
+    width: 80%;
   }
   .flageasy-options {
     width: 95%;
@@ -352,6 +363,45 @@
     font-size: 17px;
     font-weight: 600;
   }
+
+  /* result page */
+  #flageasy-performance-heading {
+    font-size: 38px;
+  }
+  #flageasy-result-text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #flageasy-restart-btn {
+    padding: 8px 20px;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  #link-to-home,
+  #link-to-home span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .result-divider {
+    width: 69%;
+  }
+  .answer-container {
+    width: 53%;
+  }
+  .answer-container h2 {
+    font-size: 21px;
+  }
+  .answer-text-container {
+    width: auto;
+    padding: 5px 5px;
+    margin-top: 10px;
+  }
+  .answer-text-container p {
+    font-size: 23px;
+    font-weight: 700;
+    color: #009400;
+  }
 }
 
 @media screen and (min-width: 570px) and (max-width: 768px) {
@@ -360,5 +410,22 @@
     font-size: 1.8rem;
     position: relative;
     right: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .answer-container {
+    width: 45%;
+  }
+  .flageasy-container .flageasy-timer {
+    font-size: 17px;
+  }
+  .flageasy-question h2 {
+    font-size: 21px;
+  }
+  .flageasy-container {
+    height: 425px;
+    width: 325px;
+    margin-top: 20px;
   }
 }
