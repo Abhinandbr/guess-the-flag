@@ -47,6 +47,48 @@
   background: #eaeaea;
 }
 
+/* main section */
+
+/* starter page styling */
+.flagmedium-starter-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.flagmedium-title h2 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.flagmedium-description p {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+#flagmedium-start-btn {
+  height: 50px;
+  width: 135px;
+  font-size: 22px;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  background: #83caf0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#flagmedium-start-btn:hover {
+  transform: scale(1.03);
+}
+
+#flagmedium-start-btn:active {
+  transform: scale(0.95);
+}
+
 /* work in progress */
 .wip-container {
   position: absolute;
@@ -78,15 +120,30 @@ h1 {
     right: 35px;
     gap: 10px;
   }
-  .wip-container {
-    width: 100%;
+
+  /* starter page */
+  .flagmedium-starter-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
   }
-  .wip-container img {
-    height: 12rem;
+  .flagmedium-title h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
   }
-  h1 {
-    margin-top: 20px;
-    font-size: 40px;
-    font-weight: 800;
+
+  .flagmedium-description p {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  #flagmedium-start-btn {
+    height: 50px;
+    width: 135px;
+    font-size: 22px;
   }
 }

@@ -8,11 +8,11 @@ easyLevel.addEventListener("click", function () {
 });
 
 mediumLevel.addEventListener("click", function () {
-  window.location.href = "pages/flagmedium.html";
+  window.location.href = "pages/flagmediumhome.html";
 });
 
 hardLevel.addEventListener("click", function () {
-  window.location.href = "pages/flaghard.html";
+  window.location.href = "pages/flaghardhome.html";
 });
 
 // opening sidebar
