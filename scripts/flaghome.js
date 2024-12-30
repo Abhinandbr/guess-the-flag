@@ -26,3 +26,14 @@ function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "none";
 }
+
+// until the release
+let popUpMsg = document.querySelector(".popUpMsg");
+let flagOption4 = document.querySelector(".flag-option4");
+
+flagOption4.onclick = () => {
+  popUpMsg.classList.add("show");
+  setTimeout(() => {
+    popUpMsg.classList.remove("show");
+  }, 2000);
+};
