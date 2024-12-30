@@ -34,31 +34,15 @@
         <a href="flaghardhome.html">Hard</a>
       </div>
     </div>
-    <!-- medium level game page -->
-    <div class="flagmedium-game-page">
-      <div class="flagmedium-title">
-        <h2>
-          Flag Quiz: <span style="font-weight: 700; color:  #e9e90d">Medium</span>
-        </h2>
-      </div>
-      <!-- question conntainer -->
-      <div class="flagmedium-container">
-        <!-- countdown time -->
-        <div class="flagmedium-timer">
-          Time left:
-          <span id="current-time-left" style="font-weight: 600"></span>
-        </div>
-
-        <!-- current flag image -->
-        <div class="flagmedium-img-container">
-          <img src="" id="flag-image" />
-        </div>
-        <div class="flagmedium-question"><h2>What flag is this?</h2></div>
-
-        <!-- country options -->
-        <div class="flagmedium-options"></div>
-      </div>
-      <!-- js link -->
-      <script src="../scripts/flagmediumgame.js"></script>
+    <!-- Result Section -->
+    <div class="flagmedium-result">
+      <h1 id="flagmedium-performance-heading"></h1>
+      <p id="flagmedium-result-text"></p>
+      <button id="flagmedium-restart-btn">Try Again</button>
+      <p id="link-to-home">+ <span>Try different levels</span></p>
+      <div class="result-divider"></div>
+      <!-- answer section created using js-->
+    </div>
+    <script src="../scripts/flagmediumresult.js"></script>
   </body>
 </html>

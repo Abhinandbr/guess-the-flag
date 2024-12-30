@@ -89,20 +89,203 @@
   transform: scale(0.95);
 }
 
-/* work in progress */
-.wip-container {
+/* game page styling */
+.flagmedium-game-page {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding-top: 50px;
 }
 
-h1 {
-  font-size: 80px;
+/* question conntainer */
+.flagmedium-container {
+  height: 650px;
+  width: 550px;
+  border-radius: 15px;
+  border: 2px solid #d2d2d2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fdfdfd;
+}
+
+.flagmedium-container .flagmedium-timer {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+/* flag image container */
+.flagmedium-img-container {
+  width: 450px;
+  height: 230px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.flagmedium-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.flagmedium-question h2 {
+  font-size: 35px;
   font-weight: 700;
+}
+
+/* country options */
+.flagmedium-options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flagmedium-option1 {
+  height: 60px;
+  width: 90%;
+  margin: 25px 0 10px 0;
+  background: #83caf0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flagmedium-option1 span {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.flagmedium-option2,
+.flagmedium-option3 {
+  height: 60px;
+  width: 90%;
+  margin: 10px 0;
+  background: #83caf0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flagmedium-option2 span,
+.flagmedium-option3 span {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.flagmedium-option1:active,
+.flagmedium-option2:active,
+.flagmedium-option3:active {
+  transform: scale(0.98);
+}
+
+/* result page styling */
+.flagmedium-result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#flagmedium-performance-heading {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#flagmedium-result-text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#flagmedium-restart-btn {
+  padding: 10px 22px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background: #a100a1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#flagmedium-restart-btn:hover {
+  transform: scale(1.05);
+}
+
+#flagmedium-restart-btn:hover:active {
+  transform: scale(0.98);
+}
+
+#link-to-home,
+#link-to-home span {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 18px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#link-to-home:hover,
+#link-to-home span:hover {
+  color: #921192;
+}
+
+/* answer section */
+.result-divider {
+  width: 50%;
+  border: 1px solid #d5d5d5;
+}
+
+.answer-container {
+  height: 380px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.answer-container h2 {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.answer-text-container {
+  background: #e4efc8;
+  width: auto;
+  padding: 5px 5px;
+  margin-top: 10px;
+}
+
+.answer-text-container p {
+  font-size: 23px;
+  font-weight: 700;
+  color: #009400;
+}
+
+.answerflag-container {
+  height: 250px;
+  width: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.answerflag-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* responsivenes */
@@ -145,5 +328,144 @@ h1 {
     height: 50px;
     width: 135px;
     font-size: 22px;
+  }
+
+  /* gamepage */
+  .flagmedium-container {
+    height: 450px;
+    width: 350px;
+    margin-top: 90px;
+    position: relative;
+    bottom: 50px;
+  }
+  .flagmedium-container .flagmedium-timer {
+    font-size: 19px;
+  }
+  .flagmedium-question h2 {
+    font-size: 23px;
+  }
+  .flagmedium-img-container {
+    width: 350px;
+    height: 230px;
+  }
+  .flagmedium-img-container img {
+    width: 80%;
+  }
+  .flagmedium-options {
+    width: 95%;
+  }
+  .flagmedium-option1 {
+    height: 40px;
+    width: 90%;
+    margin: 20px 0 10px 0;
+  }
+  .flagmedium-option2,
+  .flagmedium-option3 {
+    height: 40px;
+    width: 90%;
+  }
+  .flagmedium-option3 {
+    margin-bottom: 20px;
+  }
+  .flagmedium-option1 span,
+  .flagmedium-option2 span,
+  .flagmedium-option3 span {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  /* result page */
+  #flagmedium-performance-heading {
+    font-size: 38px;
+  }
+  #flagmedium-result-text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #flagmedium-restart-btn {
+    padding: 8px 20px;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  #link-to-home,
+  #link-to-home span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .result-divider {
+    width: 75%;
+    margin-top: 10px;
+  }
+  .answer-container {
+    width: 50%;
+    height: 340px;
+  }
+  .answer-container h2 {
+    font-size: 21px;
+  }
+  .answer-text-container {
+    width: auto;
+    padding: 5px 5px;
+    margin-top: 10px;
+  }
+  .answer-text-container p {
+    font-size: 23px;
+    font-weight: 700;
+    color: #009400;
+  }
+  .answerflag-container {
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .answerflag-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .logo {
+    display: block;
+    font-size: 1.8rem;
+    position: relative;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .answer-container {
+    width: 45%;
+  }
+  .flagmedium-container .flagmedium-timer {
+    font-size: 17px;
+  }
+  .flagmedium-question h2 {
+    font-size: 21px;
+  }
+  .flagmedium-container {
+    height: 425px;
+    width: 325px;
+    margin-top: 70px;
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .navbar-options {
+    right: 2px;
+    gap: 10px;
+  }
+  #flagmedium-result-text {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  #flagmedium-performance-heading {
+    font-size: 35px;
   }
 }
