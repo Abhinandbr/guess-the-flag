@@ -34,23 +34,33 @@
         <a href="flagmediumhome.html">Medium</a>
       </div>
     </div>
-     <div class="flaghard-starter-page">
+    <!-- Hard level game page -->
+    <div class="flaghard-game-page">
       <div class="flaghard-title">
         <h2>
-          Flag Quiz: <span style="font-weight: 700; color: #e9350d">Hard</span>
+          Flag Quiz: <span style="font-weight: 700; color:  #e9350d">Hard</span>
         </h2>
       </div>
-      <div class="flaghard-description">
-        <p>
-          30 random country flags with
-          <span style="font-weight: 600">Difficulty level: Hard.</span> 30
-          questions (without options) - 30 seconds per question. <br /><br />
-          How many correct answers will you get? Good luck!
-        </p>
-      </div>
-      <br /><br />
-      <button id="flaghard-start-btn">Start Quiz</button>
-  <!-- js link -->
-  <script src="../scripts/flaghardhome.js"></script>
+      <!-- question conntainer -->
+      <div class="flaghard-container">
+        <!-- countdown time -->
+        <div class="flaghard-timer">
+          Time left:
+          <span id="current-time-left" style="font-weight: 600"></span>
+        </div>
+
+        <!-- current flag image -->
+        <div class="flaghard-img-container">
+          <img src="" id="flag-image" />
+        </div>
+        <div class="flaghard-question"><h2>What flag is this?</h2></div>
+
+        <!-- Input field and submit button -->
+        <div class="user-input-container">
+          <input type="text" id="user-input" placeholder="Type your answer here" />
+          <button id="submit-answer-btn">Submit</button>
+        </div>
+      <!-- js link -->
+      <script src="../scripts/flaghardgame.js"></script>
   </body>
 </html>
